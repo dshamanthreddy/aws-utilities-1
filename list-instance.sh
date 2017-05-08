@@ -1,5 +1,5 @@
-#!/bin/sh
-# list all the ec2 instances for your account in all regions.
+#!/bin/bash
+# list all ec2 instances for your account in all regions.
 
 for region in `aws ec2 describe-regions --output text | cut -f3`
 do
